@@ -13,7 +13,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'readarr-ebooks'
-        intport: '8686'
+        intport: '8787'
         extport: '8686'
         image: 'hotio/readarr:nightly'
 
