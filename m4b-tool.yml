@@ -44,7 +44,6 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/{{pgrole}}:/config'
-          - '/mnt:/mnt'
           - '/mnt/unionfs/temp:/temp'
           - '/mnt/unionfs/original:/original'
           - '/mnt/unionfs/backup:/backup'
