@@ -44,7 +44,8 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/{{pgrole}}:/config'
-          - '/mnt/unionfs/temp:/temp'
+          - '/mnt/unionfs/working:/temp'
+          - '/mnt/unionfs/working/untagged:/temp/untagged'
           - '/mnt/unionfs/original:/original'
           - '/mnt/unionfs/backup:/backup'
           - '{{path.stdout}}:{{path.stdout}}'
