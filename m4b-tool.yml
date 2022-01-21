@@ -44,7 +44,7 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/{{pgrole}}:/config'
-          - '/opt/appdata/temp:/temp'
+          - '/opt/appdata/{{pgrole}}/temp:/temp'
           - '/mnt/unionfs/working/untagged:/temp/untagged'
           - '/mnt/unionfs/original:/original'
           - '/mnt/audiobooks_backup:/backup'
