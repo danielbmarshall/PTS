@@ -44,10 +44,10 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/{{pgrole}}:/config'
-          - '/mnt/unionfs/working:/temp'
+          - '/opt/appdata/temp:/temp'
           - '/mnt/unionfs/working/untagged:/temp/untagged'
           - '/mnt/unionfs/original:/original'
-          - '/mnt/unionfs/backup:/backup'
+          - '/mnt/audiobooks_backup:/backup'
           - '{{path.stdout}}:{{path.stdout}}'
 
     - name: 'Setting {{pgrole}} ENV'
